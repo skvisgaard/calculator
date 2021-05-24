@@ -1,11 +1,18 @@
 {
-  "name": "calculator",
+  "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "serve": "lessc styles.less styles.css"
+    "start": "webpack app.js --mode development --watch",
+    "build": "lessc styles.less styles.css",
+    "test": "jest"
   },
-  "author": "Sofie",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
 }

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #252525;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dde9ec;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.calculator {
+  width: 450px;
+  border: 4px solid white;
+}
+.calculator .row {
+  display: flex;
+  flex-basis: 100%;
+}
+.calculator .display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  min-height: 100px;
+  background-color: #252525;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.calculator .display .previous-operand,
+.calculator .display .current-operand {
+  color: white;
+}
+.calculator .display .previous-operand {
+  font-size: 20px;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-basis: 25%;
+}
+button.two-col {
+  flex-basis: 50%;
+}
+button.operation {
+  background-color: #00bcd4;
+  color: white;
+  font-weight: 500;
+}
+button.number {
+  font-weight: 500;
+}
+button.delete,
+button.all-clear,
+button.equals {
+  font-weight: 300;
+  background-color: #e2e2e2;
+}
+button:hover {
+  background-color: #bcd4da;
+}
