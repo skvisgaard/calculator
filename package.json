@@ -8,9 +8,8 @@
   },
   "scripts": {
     "start": "webpack src/app.js --mode development",
-    "webpack": "webpack",
-    "dev": "npm run webpack -- --mode development --watch",
-    "build": "npm run webpack -- --mode production"
+    "dev": "node src/server.js", 
+    "heroku-postbuild": "webpack -p"
   },
   "author": "",
   "license": "ISC",
