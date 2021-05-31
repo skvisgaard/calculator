@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack app.js --mode development --watch",
-    "build": "lessc styles.less styles.css",
     "test": "jest"
   },
   "author": "",
