@@ -7,8 +7,8 @@
     "node": "12.x"
   },
   "scripts": {
-    "start": "webpack src/index.js --mode development",
-    "dev": "node src/server.js", 
+    "start": "node src/server.js",
+    "dev": "webpack src/index.js --mode development", 
     "heroku-postbuild": "webpack -p"
   },
   "author": "",
