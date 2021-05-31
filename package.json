@@ -2,12 +2,12 @@
   "name": "calculator",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./src/app.js",
   "engines": {
     "node": "12.x"
   },
   "scripts": {
-    "start": "webpack app.js --mode development",
+    "start": "webpack src/app.js --mode development",
     "heroku-postbuild": "webpack -p"
   },
   "author": "",

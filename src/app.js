@@ -1,4 +1,4 @@
-const Calculator = require('./models/calculator');
+const Calculator = require('../models/calculator');
 
 const initCalculator = () => {
     const numberBtns = document.querySelectorAll('.number');
