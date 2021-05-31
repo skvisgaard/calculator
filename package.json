@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack src/app.js --mode development",
-    "webpack" : "webpack",
+    "webpack": "webpack",
     "dev": "npm run webpack -- --mode development --watch",
     "build": "npm run webpack -- --mode production"
   },
