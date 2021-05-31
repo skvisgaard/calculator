@@ -7,8 +7,9 @@
     "node": "12.x"
   },
   "scripts": {
-    "start": "webpack src/app.js --mode development",
-    "heroku-postbuild": "webpack -p"
+    "webpack" : "webpack", 
+    "dev": "npm run webpack -- --mode development --watch",
+    "build": "npm run webpack -- --mode production"
   },
   "author": "",
   "license": "ISC",
