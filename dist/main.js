@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,14 +97,14 @@ eval("class Calculator {\r\n    constructor(previousOperandElm, currentOperandEl
 
 /***/ }),
 
-/***/ "./src/app.js":
+/***/ "./src/index.js":
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const Calculator = __webpack_require__(/*! ../models/calculator */ \"./models/calculator.js\");\r\n\r\nconst initCalculator = () => {\r\n    const numberBtns = document.querySelectorAll('.number');\r\n    const operationBtns = document.querySelectorAll('.operation');\r\n    const allClearBtn = document.querySelector('.all-clear');\r\n    const deleteBtn = document.querySelector('.delete');\r\n    const equalsBtn = document.querySelector('.equals');\r\n    const previousOperand = document.querySelector('.previous-operand');\r\n    const currentOperand = document.querySelector('.current-operand');\r\n\r\n    const calculator = new Calculator(previousOperand, currentOperand);\r\n\r\n    numberBtns.forEach(btn => {\r\n        btn.addEventListener('click', () => {\r\n            calculator.appendNumber(btn.innerText);\r\n            calculator.updateDisplay();\r\n        })\r\n    });\r\n\r\n    operationBtns.forEach(btn => {\r\n        btn.addEventListener('click', () => {\r\n            calculator.selectOperation(btn.innerText);\r\n            calculator.updateDisplay();\r\n        })\r\n    });\r\n\r\n    equalsBtn.addEventListener('click', btn => {\r\n        calculator.compute();\r\n        calculator.updateDisplay();\r\n    });\r\n\r\n    allClearBtn.addEventListener('click', btn => {\r\n        calculator.clear();\r\n        calculator.updateDisplay();\r\n    });\r\n\r\n    deleteBtn.addEventListener('click', btn => {\r\n        calculator.delete();\r\n        calculator.updateDisplay();\r\n    });\r\n\r\n}\r\n\r\n// Start calculator\r\ninitCalculator();\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("const Calculator = __webpack_require__(/*! ../models/calculator */ \"./models/calculator.js\");\r\n\r\nconst initCalculator = () => {\r\n    const numberBtns = document.querySelectorAll('.number');\r\n    const operationBtns = document.querySelectorAll('.operation');\r\n    const allClearBtn = document.querySelector('.all-clear');\r\n    const deleteBtn = document.querySelector('.delete');\r\n    const equalsBtn = document.querySelector('.equals');\r\n    const previousOperand = document.querySelector('.previous-operand');\r\n    const currentOperand = document.querySelector('.current-operand');\r\n\r\n    const calculator = new Calculator(previousOperand, currentOperand);\r\n\r\n    numberBtns.forEach(btn => {\r\n        btn.addEventListener('click', () => {\r\n            calculator.appendNumber(btn.innerText);\r\n            calculator.updateDisplay();\r\n        })\r\n    });\r\n\r\n    operationBtns.forEach(btn => {\r\n        btn.addEventListener('click', () => {\r\n            calculator.selectOperation(btn.innerText);\r\n            calculator.updateDisplay();\r\n        })\r\n    });\r\n\r\n    equalsBtn.addEventListener('click', btn => {\r\n        calculator.compute();\r\n        calculator.updateDisplay();\r\n    });\r\n\r\n    allClearBtn.addEventListener('click', btn => {\r\n        calculator.clear();\r\n        calculator.updateDisplay();\r\n    });\r\n\r\n    deleteBtn.addEventListener('click', btn => {\r\n        calculator.delete();\r\n        calculator.updateDisplay();\r\n    });\r\n\r\n}\r\n\r\n// Start calculator\r\ninitCalculator();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
